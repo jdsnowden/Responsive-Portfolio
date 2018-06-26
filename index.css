@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    background-image: url(doodles.png)
+}
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+header {
+    background: gainsboro;
+    margin: 0 auto;
+    width: 80%;
+    position: static;
+}
+
+p {
+    float: left;
+    font-size: 22pt;
+    margin: 0px;
+}
+
+nav {
+    float: right;
+}
+
+header::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 3px;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 22px;
+    color: black;
+}
+
+
+nav a:hover {
+    color: cadetblue;
+}
+
+nav a::before {
+    content: " ";
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+ img {
+     float: left;
+ }
+
+ p1 {
+     font-size: 16pt;
+ }
+
+ .clearfix {
+    overflow: auto;
+ }
+
+ @media only screen and (max-width: 980px) {
+    body {
+        background-color: yellow;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background: lightblue;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    body {
+        background:lightgreen;
+    }
+}
